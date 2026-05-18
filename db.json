@@ -1,0 +1,35 @@
+{
+  "students": [
+    {
+      "id": "KWJdM0xL63g",
+      "name": "Sam",
+      "place": "Illinois",
+      "phone": "0248888888"
+    },
+    {
+      "id": "NbB3GLH8iAs",
+      "name": "Samuel",
+      "place": "Kasoa",
+      "phone": "0245555555"
+    },
+    {
+      "id": "n49nDNxOo5I",
+      "name": "Arthur",
+      "place": "Suhum",
+      "phone": "0245555555"
+    },
+    {
+      "id": "RQYOHc5h-uM",
+      "name": "Katherine",
+      "place": "Bahamas",
+      "phone": "0245555555"
+    },
+    {
+      "id": "mBI2bVF5iNY",
+      "name": "Rita",
+      "place": "Boston",
+      "phone": "0245555555"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
