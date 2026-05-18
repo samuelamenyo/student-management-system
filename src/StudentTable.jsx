@@ -16,9 +16,12 @@ const StudentTable = () => {
   const RemoveUser = async (id) => {
     if (window.confirm("Are you sure you want to delete this user??")) {
       try {
-        const response = await fetch("http://localhost:3000/students/" + id, {
-          method: "DELETE",
-        });
+        const response = await fetch(
+          "https://student-management-system-apis.onrender.com/students/" + id,
+          {
+            method: "DELETE",
+          },
+        );
 
         if (response.ok) {
           alert("Student Removed Successfully");
@@ -32,7 +35,9 @@ const StudentTable = () => {
   };
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/students");
+      const response = await fetch(
+        "https://student-management-system-apis.onrender.com/students",
+      );
       const data = await response.json();
       setStudents(data);
     } catch (error) {
