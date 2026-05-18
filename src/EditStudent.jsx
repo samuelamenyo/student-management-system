@@ -16,7 +16,7 @@ const EditStudent = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/students/" + studentid,
+        "https://student-management-system-apis.onrender.com/" + studentid,
       );
 
       const data = await response.json();
@@ -44,7 +44,7 @@ const EditStudent = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/students/" + studentid,
+        "https://student-management-system-apis.onrender.com/" + studentid,
         {
           method: "PUT",
           headers: {
