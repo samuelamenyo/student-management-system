@@ -8,7 +8,7 @@ const ViewDetails = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "https://student-management-system-apis.onrender.com/" + studentid,
+        "http://localhost:3000/students/" + studentid,
       );
       const data = await response.json();
       console.log(data);

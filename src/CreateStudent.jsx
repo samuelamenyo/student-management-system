@@ -23,16 +23,13 @@ const CreateStudent = () => {
     };
 
     try {
-      const response = await fetch(
-        "https://student-management-system-apis.onrender.com",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newStudent),
+      const response = await fetch("http://localhost:3000/students", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify(newStudent),
+      });
 
       if (response.ok) {
         alert("Student Data Saved Successfully");
